@@ -79,8 +79,9 @@ namespace FireFox
             this.siticoneTextBox1.PlaceholderText = "";
             this.siticoneTextBox1.SelectedText = "";
             this.siticoneTextBox1.ShadowDecoration.Parent = this.siticoneTextBox1;
-            this.siticoneTextBox1.Size = new System.Drawing.Size(1108, 24);
+            this.siticoneTextBox1.Size = new System.Drawing.Size(1142, 24);
             this.siticoneTextBox1.TabIndex = 4;
+            this.siticoneTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.siticoneTextBox1_KeyDown);
             // 
             // siticoneButton4
             // 
@@ -161,6 +162,7 @@ namespace FireFox
             this.Controls.Add(this.siticonePanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.siticonePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

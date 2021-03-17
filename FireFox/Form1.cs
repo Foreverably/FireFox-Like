@@ -196,7 +196,7 @@ namespace FireFox
         }
 
         public readonly ChromiumWebBrowser WebBrowser;
-        private bool faviconLoaded = false;
+        private bool faviconLoaded = true;
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -229,6 +229,11 @@ namespace FireFox
         private void siticoneButton4_Click(object sender, EventArgs e)
         {
             WebBrowser.Reload();
+        }
+
+        private void siticoneTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

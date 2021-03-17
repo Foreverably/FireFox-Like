@@ -35,14 +35,12 @@ namespace FireFox
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneVSeparator1 = new Siticone.UI.WinForms.SiticoneVSeparator();
             this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticonePanel1
             // 
             this.siticonePanel1.BackColor = System.Drawing.Color.White;
-            this.siticonePanel1.Controls.Add(this.siticoneVSeparator1);
             this.siticonePanel1.Controls.Add(this.siticoneTextBox1);
             this.siticonePanel1.Controls.Add(this.siticoneButton4);
             this.siticonePanel1.Controls.Add(this.siticoneButton2);
@@ -94,6 +92,7 @@ namespace FireFox
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
             this.siticoneButton4.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton4.Image")));
+            this.siticoneButton4.ImageSize = new System.Drawing.Size(18, 18);
             this.siticoneButton4.Location = new System.Drawing.Point(60, 0);
             this.siticoneButton4.Name = "siticoneButton4";
             this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
@@ -139,19 +138,6 @@ namespace FireFox
             this.siticoneButton1.TabIndex = 0;
             this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
-            // siticoneVSeparator1
-            // 
-            this.siticoneVSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneVSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.siticoneVSeparator1.FillColor = System.Drawing.Color.Black;
-            this.siticoneVSeparator1.FillStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.siticoneVSeparator1.FillThickness = 6;
-            this.siticoneVSeparator1.Location = new System.Drawing.Point(1270, 0);
-            this.siticoneVSeparator1.Name = "siticoneVSeparator1";
-            this.siticoneVSeparator1.Size = new System.Drawing.Size(10, 30);
-            this.siticoneVSeparator1.TabIndex = 5;
-            this.siticoneVSeparator1.UseTransparentBackground = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,7 +159,6 @@ namespace FireFox
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
-        private Siticone.UI.WinForms.SiticoneVSeparator siticoneVSeparator1;
     }
 }
 

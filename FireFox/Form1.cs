@@ -215,5 +215,20 @@ namespace FireFox
                 WebBrowser.Load(fullUrl);
             }
         }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+            WebBrowser.Back();
+        }
+
+        private void siticoneButton2_Click(object sender, EventArgs e)
+        {
+            WebBrowser.Forward();
+        }
+
+        private void siticoneButton4_Click(object sender, EventArgs e)
+        {
+            WebBrowser.Reload();
+        }
     }
 }

@@ -33,18 +33,18 @@ namespace FireFox
             this.siticonePanel1 = new Siticone.UI.WinForms.SiticonePanel();
             this.siticoneTextBox1 = new Siticone.UI.WinForms.SiticoneTextBox();
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneVSeparator1 = new Siticone.UI.WinForms.SiticoneVSeparator();
             this.siticonePanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticonePanel1
             // 
             this.siticonePanel1.BackColor = System.Drawing.Color.White;
+            this.siticonePanel1.Controls.Add(this.siticoneVSeparator1);
             this.siticonePanel1.Controls.Add(this.siticoneTextBox1);
             this.siticonePanel1.Controls.Add(this.siticoneButton4);
-            this.siticonePanel1.Controls.Add(this.siticoneButton3);
             this.siticonePanel1.Controls.Add(this.siticoneButton2);
             this.siticonePanel1.Controls.Add(this.siticoneButton1);
             this.siticonePanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -73,13 +73,13 @@ namespace FireFox
             this.siticoneTextBox1.ForeColor = System.Drawing.Color.Black;
             this.siticoneTextBox1.HoveredState.BorderColor = System.Drawing.Color.Blue;
             this.siticoneTextBox1.HoveredState.Parent = this.siticoneTextBox1;
-            this.siticoneTextBox1.Location = new System.Drawing.Point(126, 3);
+            this.siticoneTextBox1.Location = new System.Drawing.Point(96, 3);
             this.siticoneTextBox1.Name = "siticoneTextBox1";
             this.siticoneTextBox1.PasswordChar = '\0';
             this.siticoneTextBox1.PlaceholderText = "";
             this.siticoneTextBox1.SelectedText = "";
             this.siticoneTextBox1.ShadowDecoration.Parent = this.siticoneTextBox1;
-            this.siticoneTextBox1.Size = new System.Drawing.Size(1142, 24);
+            this.siticoneTextBox1.Size = new System.Drawing.Size(1168, 24);
             this.siticoneTextBox1.TabIndex = 4;
             this.siticoneTextBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.siticoneTextBox1_KeyDown);
             // 
@@ -94,29 +94,12 @@ namespace FireFox
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
             this.siticoneButton4.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton4.Image")));
-            this.siticoneButton4.Location = new System.Drawing.Point(90, 0);
+            this.siticoneButton4.Location = new System.Drawing.Point(60, 0);
             this.siticoneButton4.Name = "siticoneButton4";
             this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
             this.siticoneButton4.Size = new System.Drawing.Size(30, 30);
             this.siticoneButton4.TabIndex = 3;
-            // 
-            // siticoneButton3
-            // 
-            this.siticoneButton3.BorderRadius = 15;
-            this.siticoneButton3.CheckedState.Parent = this.siticoneButton3;
-            this.siticoneButton3.CustomImages.Parent = this.siticoneButton3;
-            this.siticoneButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.siticoneButton3.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton3.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Image = ((System.Drawing.Image)(resources.GetObject("siticoneButton3.Image")));
-            this.siticoneButton3.ImageSize = new System.Drawing.Size(25, 25);
-            this.siticoneButton3.Location = new System.Drawing.Point(60, 0);
-            this.siticoneButton3.Name = "siticoneButton3";
-            this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
-            this.siticoneButton3.Size = new System.Drawing.Size(30, 30);
-            this.siticoneButton3.TabIndex = 2;
+            this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton4_Click);
             // 
             // siticoneButton2
             // 
@@ -135,6 +118,7 @@ namespace FireFox
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(30, 30);
             this.siticoneButton2.TabIndex = 1;
+            this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton2_Click);
             // 
             // siticoneButton1
             // 
@@ -153,6 +137,20 @@ namespace FireFox
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(30, 30);
             this.siticoneButton1.TabIndex = 0;
+            this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
+            // 
+            // siticoneVSeparator1
+            // 
+            this.siticoneVSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneVSeparator1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.siticoneVSeparator1.FillColor = System.Drawing.Color.Black;
+            this.siticoneVSeparator1.FillStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.siticoneVSeparator1.FillThickness = 6;
+            this.siticoneVSeparator1.Location = new System.Drawing.Point(1270, 0);
+            this.siticoneVSeparator1.Name = "siticoneVSeparator1";
+            this.siticoneVSeparator1.Size = new System.Drawing.Size(10, 30);
+            this.siticoneVSeparator1.TabIndex = 5;
+            this.siticoneVSeparator1.UseTransparentBackground = true;
             // 
             // Form1
             // 
@@ -173,9 +171,9 @@ namespace FireFox
         private Siticone.UI.WinForms.SiticonePanel siticonePanel1;
         private Siticone.UI.WinForms.SiticoneTextBox siticoneTextBox1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton4;
-        private Siticone.UI.WinForms.SiticoneButton siticoneButton3;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
+        private Siticone.UI.WinForms.SiticoneVSeparator siticoneVSeparator1;
     }
 }
 

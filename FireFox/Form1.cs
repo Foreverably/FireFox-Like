@@ -107,6 +107,8 @@ namespace FireFox
         {
             InitializeComponent();
 
+            
+
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
             WebBrowser = new ChromiumWebBrowser("about:blank")
@@ -118,6 +120,7 @@ namespace FireFox
                 Size = new Size(1280, 713),
                 TabIndex = 6,
                 LifeSpanHandler = new NewTabLifespanHandler(this)
+                
             };
 
             Controls.Add(WebBrowser);
@@ -234,6 +237,37 @@ namespace FireFox
         private void siticoneTextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void findToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = true;
+        }
+
+        private void newTabToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ParentTabs.AddNewTab();
+        }
+
+        private void newWindowsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void siticoneButton8_Click(object sender, EventArgs e)
+        {
+            siticonePanel2.Visible = false;
+        }
+
+        private void siticoneButton3_Click(object sender, EventArgs e)
+        {
+            contextMenuStrip1.Show(siticoneButton3, new System.Drawing.Point(-60, 20));
         }
     }
 }
